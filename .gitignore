@@ -1,0 +1,13 @@
+# Ignore raw documentation archive & temp files
+Dokumentasi Vanilla Bean/
+*.zip
+*.tmp
+__pycache__/
+*.pyc
+
+# Ignore private internal operations & B2B outreach data from public GitHub Pages repo
+# (Tracked privately in https://github.com/fariedmuhammad10/solterra-outreach)
+outreach/
+.github/
+COLD_EMAIL_TEMPLATES.md
+EXPORT_WORKFLOW_CHEATSHEET.md
