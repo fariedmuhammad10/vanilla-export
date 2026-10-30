@@ -139,6 +139,14 @@
     details > summary::-webkit-details-marker {
       display: none;
     }
+    html { scroll-padding-top: 96px; }
+    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid #C59B27;
+      outline-offset: 2px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
   </style>
 </head>
 <body class="bg-cream text-vanilla font-sans antialiased selection:bg-forest selection:text-white">
@@ -150,7 +158,8 @@
         <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         <strong>2026 CROP READY FOR DISPATCH:</strong>
       </span>
-      <span>Direct Indonesian <em>Vanilla Planifolia</em> (HS Code: 0905.10.00) &bull; <strong>Free evaluation samples for business buyers</strong></span>
+      <span class="hidden sm:inline">Direct Indonesian <em>Vanilla Planifolia</em> (HS Code: 0905.10.00) &bull; <strong>Free evaluation samples for business buyers</strong></span>
+      <span class="sm:hidden"><strong>Free samples for business buyers</strong></span>
     </div>
   </div>
 
@@ -162,39 +171,40 @@
           S
         </div>
         <div>
-          <span class="font-serif font-bold text-lg tracking-tight text-forest block leading-tight">SOLTERRA SPICES</span>
-          <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold">Direct Origin Export &bull; Indonesia</span>
+          <span class="font-serif font-bold text-lg tracking-tight text-forest block leading-tight whitespace-nowrap">SOLTERRA SPICES</span>
+          <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold whitespace-nowrap">Direct Origin Export &bull; Indonesia</span>
         </div>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-stone-700">
-        <a href="#specifications" class="hover:text-forest transition">Product Grades</a>
-        <a href="#quality" class="hover:text-forest transition">Sorting &amp; QC</a>
+      <nav aria-label="Main" class="hidden xl:flex items-center gap-6 text-sm font-medium text-stone-700 whitespace-nowrap">
+        <a href="#specifications" class="hover:text-forest transition">Grades</a>
+        <a href="#quality" class="hover:text-forest transition">Quality</a>
         <a href="#packaging" class="hover:text-forest transition">Packaging</a>
-        <a href="#calculator" class="hover:text-forest transition">Order Configurator</a>
+        <a href="#how-it-works" class="hover:text-forest transition">How to Order</a>
         <a href="#origin" class="hover:text-forest transition">Origin</a>
-        <a href="#faq" class="hover:text-forest transition">Buyer FAQ</a>
+        <a href="#faq" class="hover:text-forest transition">FAQ</a>
         <a href="spec-sheet.html" target="_blank" class="text-forest font-semibold hover:underline inline-flex items-center gap-1 bg-forest/5 px-3 py-1.5 rounded-lg border border-forest/15">
-          <span>Spec Sheet (PDF)</span>
+          <span>Spec Sheet</span>
           <span aria-hidden="true">&nearr;</span>
         </a>
       </nav>
 
       <!-- CTA -->
       <div class="flex items-center gap-3">
-        <a href="#contact" class="hidden sm:inline-flex bg-forest hover:bg-forest-light text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition shadow-sm items-center gap-1.5">
+        <a href="#contact" class="hidden sm:inline-flex bg-forest hover:bg-forest-light text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition shadow-sm items-center gap-1.5 whitespace-nowrap">
           <span>Free Sample / Quote</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
-        <button id="mobileMenuBtn" aria-label="Open navigation menu" class="lg:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100 focus:outline-none">
+        <button id="mobileMenuBtn" aria-label="Open navigation menu" class="xl:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100 focus:outline-none">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
         </button>
       </div>
     </div>
 
     <!-- Mobile Menu Drawer -->
-    <div id="mobileMenu" class="hidden lg:hidden border-t border-stone-200 bg-cream px-4 pt-3 pb-6 space-y-2.5 text-sm font-medium shadow-lg">
+    <div id="mobileMenu" class="hidden xl:hidden border-t border-stone-200 bg-cream px-4 pt-3 pb-6 space-y-2.5 text-sm font-medium shadow-lg">
+      <a href="#how-it-works" class="block py-1.5 text-stone-700 hover:text-forest mobile-nav-link">How to Order</a>
       <a href="#specifications" class="block py-1.5 text-stone-700 hover:text-forest mobile-nav-link">Product Grades</a>
       <a href="#quality" class="block py-1.5 text-stone-700 hover:text-forest mobile-nav-link">Sorting &amp; QC</a>
       <a href="#packaging" class="block py-1.5 text-stone-700 hover:text-forest mobile-nav-link">Packaging &amp; Conditioning</a>
@@ -215,23 +225,23 @@
         <div class="lg:col-span-7 space-y-6">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-forest/10 text-forest text-xs font-semibold uppercase tracking-wider border border-forest/20">
             <span class="w-2 h-2 rounded-full bg-forest animate-pulse"></span>
-            Direct Indonesian Smallholder Sourcing &bull; HS Code 0905.10.00
+            Indonesian Vanilla Exporter &bull; HS 0905.10.00
           </div>
 
-          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[52px] font-bold text-vanilla leading-[1.12]">
+          <h1 class="font-serif text-[32px] sm:text-5xl lg:text-[52px] font-bold text-vanilla leading-[1.12] tracking-tight">
             Direct-Origin Indonesian Vanilla Beans for Global Flavor &amp; Culinary Buyers
           </h1>
 
           <p class="text-stone-600 text-base sm:text-lg leading-relaxed max-w-2xl">
-            Traditionally sun-cured <strong>Vanilla Planifolia Andrews</strong> sourced from smallholder farming cooperatives across Indonesia’s volcanic highlands. Hand-calibrated on stainless steel tables, vacuum-sealed for aroma retention, and dispatched via air cargo from Jakarta (<strong>FOB CGK</strong> or <strong>CIF</strong>).
+            Traditionally sun-cured <strong>Vanilla Planifolia</strong> from partner curers in Indonesia. Graded by length and moisture, vacuum-sealed for aroma retention, and shipped by air from Jakarta (<strong>FOB CGK</strong> or <strong>CIF</strong>). Free evaluation samples for importers, distributors and manufacturers.
           </p>
 
-          <div class="flex flex-wrap items-center gap-4 pt-2">
-            <a href="#contact" class="bg-forest hover:bg-forest-light text-white font-semibold px-7 py-4 rounded-xl transition shadow-md inline-flex items-center gap-2">
+          <div class="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 sm:gap-4 pt-2">
+            <a href="#contact" class="bg-forest hover:bg-forest-light text-white font-semibold px-7 py-4 rounded-xl transition shadow-md inline-flex items-center justify-center gap-2">
               <span>Request a Free Sample</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </a>
-            <a href="spec-sheet.html" target="_blank" class="bg-white hover:bg-stone-100 text-vanilla border border-stone-300 font-semibold px-6 py-4 rounded-xl transition inline-flex items-center gap-2 shadow-sm">
+            <a href="spec-sheet.html" target="_blank" class="bg-white hover:bg-stone-100 text-vanilla border border-stone-300 font-semibold px-6 py-4 rounded-xl transition inline-flex items-center justify-center gap-2 shadow-sm">
               <span>Technical Spec Sheet (PDF)</span>
               <svg class="w-4 h-4 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
@@ -241,17 +251,17 @@
           <div class="grid grid-cols-3 gap-4 pt-6 border-t border-stone-200 max-w-xl">
             <div>
               <p class="text-xs uppercase tracking-wider text-stone-500 font-semibold">Vanillin Profile</p>
-              <p class="font-serif font-bold text-2xl text-forest mt-0.5">1.6% – 2.4%</p>
+              <p class="font-serif font-bold text-xl sm:text-2xl text-forest mt-0.5">1.6% – 2.4%</p>
               <p class="text-[11px] text-stone-500">Grade A &amp; Extraction</p>
             </div>
             <div>
               <p class="text-xs uppercase tracking-wider text-stone-500 font-semibold">Trial Lot MOQ</p>
-              <p class="font-serif font-bold text-2xl text-forest mt-0.5">10 – 30 kg</p>
+              <p class="font-serif font-bold text-xl sm:text-2xl text-forest mt-0.5">10 – 30 kg</p>
               <p class="text-[11px] text-stone-500">Vacuum-sealed pouches</p>
             </div>
             <div>
               <p class="text-xs uppercase tracking-wider text-stone-500 font-semibold">Dispatch Hub</p>
-              <p class="font-serif font-bold text-2xl text-forest mt-0.5">Jakarta CGK</p>
+              <p class="font-serif font-bold text-xl sm:text-2xl text-forest mt-0.5">Jakarta CGK</p>
               <p class="text-[11px] text-stone-500">7–10 days turnaround</p>
             </div>
           </div>
@@ -337,6 +347,37 @@
             <p class="text-xs text-stone-300">Direct dispatch via Jakarta (CGK)</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW ORDERING WORKS -->
+  <section id="how-it-works" class="py-14 lg:py-16 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-forest">How Ordering Works</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 text-vanilla">From free sample to regular supply in three steps</h2>
+      </div>
+      <ol class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <li class="rounded-2xl border border-stone-200 bg-cream p-6">
+          <span class="inline-flex w-9 h-9 items-center justify-center rounded-full bg-forest text-white font-semibold text-sm">1</span>
+          <h3 class="font-serif text-xl font-bold text-vanilla mt-4">Test a free sample</h3>
+          <p class="text-sm text-stone-600 leading-relaxed mt-2">Tell us which grade you want to evaluate. Samples are free; the courier goes on your DHL/FedEx account.</p>
+        </li>
+        <li class="rounded-2xl border border-stone-200 bg-cream p-6">
+          <span class="inline-flex w-9 h-9 items-center justify-center rounded-full bg-forest text-white font-semibold text-sm">2</span>
+          <h3 class="font-serif text-xl font-bold text-vanilla mt-4">Place a trial lot</h3>
+          <p class="text-sm text-stone-600 leading-relaxed mt-2">Start with 10&ndash;30 kg by air, FOB Jakarta or CIF. 50% deposit, balance against the air waybill and phytosanitary certificate.</p>
+        </li>
+        <li class="rounded-2xl border border-stone-200 bg-cream p-6">
+          <span class="inline-flex w-9 h-9 items-center justify-center rounded-full bg-forest text-white font-semibold text-sm">3</span>
+          <h3 class="font-serif text-xl font-bold text-vanilla mt-4">Move to regular supply</h3>
+          <p class="text-sm text-stone-600 leading-relaxed mt-2">Recurring lots graded to the same specification, with the same export paperwork on every shipment.</p>
+        </li>
+      </ol>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="#contact" class="bg-forest hover:bg-forest-light text-white font-semibold px-6 py-3.5 rounded-xl transition shadow-sm inline-flex items-center justify-center gap-2">Request a Free Sample</a>
+        <a href="https://wa.me/6281398775451" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-stone-100 text-vanilla border border-stone-300 font-semibold px-6 py-3.5 rounded-xl transition inline-flex items-center justify-center gap-2">Chat on WhatsApp</a>
       </div>
     </div>
   </section>
