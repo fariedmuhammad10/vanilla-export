@@ -2,7 +2,7 @@
 
 Official B2B export showcase and specification portal for **Solterra Spices** ([https://solterraspices.com](https://solterraspices.com)).
 
-We supply direct-origin, traditionally sun-cured **Indonesian Vanilla Planifolia** (HS Code: `0905.10.00`), sourced directly from smallholder farming cooperatives across Java, Bali, and Flores, Indonesia.
+We supply direct-origin, traditionally sun-cured **Indonesian Vanilla Planifolia** (HS Code: `0905.10.00`), sourced from partner curers and smallholder growers in Indonesia.
 
 ---
 
@@ -30,7 +30,8 @@ We supply direct-origin, traditionally sun-cured **Indonesian Vanilla Planifolia
 - **Primary Packaging:** High-barrier food-grade PA/PE nylon vacuum pouches (`1 kg`, `2.5 kg`, or `5 kg` net)
 - **Master Cartons:** Heavy-duty double-wall corrugated cartons (`10 kg` – `25 kg` net) with moisture liner
 - **Evaluation & Trial Orders:** `1 kg – 5 kg` evaluation packs / `10 kg – 30 kg` trial air shipments
-- **Monthly Supply Capacity:** `500+ kg / month`
+- **Supply Volume:** confirmed per order (trial lots from `10 kg`)
+- **Samples:** complimentary for business buyers, international courier included
 - **Incoterms:** FOB Soekarno-Hatta Int'l Airport (`CGK`) or CIF/CIP Destination Airport via DHL Express / FedEx / Air Cargo
 - **Export Documentation:** Indonesian Quarantine Phytosanitary Certificate, Certificate of Origin (General CoO / Preferential FTA Forms), Commercial Invoice, Packing List, Air Waybill (AWB).
 
