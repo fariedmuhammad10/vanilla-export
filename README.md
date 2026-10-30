@@ -31,7 +31,7 @@ We supply direct-origin, traditionally sun-cured **Indonesian Vanilla Planifolia
 - **Master Cartons:** Heavy-duty double-wall corrugated cartons (`10 kg` – `25 kg` net) with moisture liner
 - **Evaluation & Trial Orders:** `1 kg – 5 kg` evaluation packs / `10 kg – 30 kg` trial air shipments
 - **Supply Volume:** confirmed per order (trial lots from `10 kg`)
-- **Samples:** complimentary for business buyers, international courier included
+- **Samples:** complimentary for business buyers (courier via buyer's DHL/FedEx account or prepaid invoice)
 - **Incoterms:** FOB Soekarno-Hatta Int'l Airport (`CGK`) or CIF/CIP Destination Airport via DHL Express / FedEx / Air Cargo
 - **Export Documentation:** Indonesian Quarantine Phytosanitary Certificate, Certificate of Origin (General CoO / Preferential FTA Forms), Commercial Invoice, Packing List, Air Waybill (AWB).
 
